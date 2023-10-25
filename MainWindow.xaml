@@ -5,10 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mathematical_vectors"
         mc:Ignorable="d"
-        Title="Vectors" Height="550" Width="1000">
+        Title="Vectors" Height="550" Width="700">
     <Grid Margin="0,0,0,-16">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="400,441,0,0" VerticalAlignment="Top" Height="35" Width="80"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="50,72,0,0" VerticalAlignment="Top"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="525,461,0,0" VerticalAlignment="Top" Height="45" Width="129" FontSize="18" Click="Button_Click"/>
+        <Label  Content="X - " HorizontalAlignment="Left" Margin="62,69,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label  Content="Y - " HorizontalAlignment="Left" Margin="62,121,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label  Content="Z - " HorizontalAlignment="Left" Margin="62,174,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="XVA"  HorizontalAlignment="Left" Margin="99,73,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="57" FontSize="18"/>
+        <TextBox x:Name="YVA" HorizontalAlignment="Left" Margin="99,125,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="57" FontSize="18"/>
+        <TextBox x:Name="ZVA" HorizontalAlignment="Left" Margin="99,178,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="57" FontSize="18"/>
+        <Label Content="Vector A" HorizontalAlignment="Left" Margin="62,27,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label  Content="X - " HorizontalAlignment="Left" Margin="203,69,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label  Content="Y - " HorizontalAlignment="Left" Margin="203,121,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label  Content="Z - " HorizontalAlignment="Left" Margin="203,174,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="XVB" HorizontalAlignment="Left" Margin="240,73,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="56" FontSize="18"/>
+        <TextBox x:Name="YVB" HorizontalAlignment="Left" Margin="240,125,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="56" FontSize="18"/>
+        <TextBox x:Name="ZVB" HorizontalAlignment="Left" Margin="240,178,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="56" FontSize="18"/>
+        <Label Content="Vector B" HorizontalAlignment="Left" Margin="203,27,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="addition of vectors:" HorizontalAlignment="Left" Margin="435,27,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label  Content="~ C " HorizontalAlignment="Left" Margin="435,69,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="addition" Content="(4;4;4)" HorizontalAlignment="Left" Margin="468,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="subtraction of vectors:" HorizontalAlignment="Left" Margin="435,123,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label  Content="~ D " HorizontalAlignment="Left" Margin="435,165,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="subtraction" Content="(4;4;4)" HorizontalAlignment="Left" Margin="468,173,0,0" VerticalAlignment="Top"/>
+        <Label Content="scalar product:" HorizontalAlignment="Left" Margin="434,216,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label  Content="~ A*B = " HorizontalAlignment="Left" Margin="434,0,0,0" VerticalAlignment="Center" FontSize="18"/>
+        <Label x:Name="Scalar"  Content="" HorizontalAlignment="Left" Margin="502,0,0,0" VerticalAlignment="Center" FontSize="18"/>
+        <Label Content="length of the vector:" HorizontalAlignment="Left" Margin="56,305,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label  Content="~ |A| = " HorizontalAlignment="Left" Margin="56,347,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="LengthA"  Content="" HorizontalAlignment="Left" Margin="120,347,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label  Content="~ |B| = " HorizontalAlignment="Left" Margin="56,381,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="LengthB"  Content="" HorizontalAlignment="Left" Margin="119,381,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label  Content="~ |AB| = " HorizontalAlignment="Left" Margin="56,415,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="LengthAB"  Content="" HorizontalAlignment="Left" Margin="126,415,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Image  Source ="/Sourse/way.png" HorizontalAlignment="Left" Height="49" Margin="268,432,0,0" VerticalAlignment="Top" Width="182" Stretch="UniformToFill"/>
+        <Image Source ="/Sourse/Scalar.png" HorizontalAlignment="Left" Height="63" Margin="268,349,0,0" VerticalAlignment="Top" Width="386"/>
 
     </Grid>
 </Window>
