@@ -19,7 +19,7 @@
         <Label  Content="Y - " HorizontalAlignment="Left" Margin="203,121,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label  Content="Z - " HorizontalAlignment="Left" Margin="203,174,0,0" VerticalAlignment="Top" FontSize="18"/>
         <TextBox x:Name="XVB" HorizontalAlignment="Left" Margin="240,73,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="56" FontSize="18"/>
-        <TextBox x:Name="YVB" HorizontalAlignment="Left" Margin="240,125,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="56" FontSize="18"/>
+        <TextBox x:Name="YVB" HorizontalAlignment="Left" Margin="240,125,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="56" FontSize="18" TextChanged="YVB_TextChanged"/>
         <TextBox x:Name="ZVB" HorizontalAlignment="Left" Margin="240,178,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="56" FontSize="18"/>
         <Label Content="Vector B" HorizontalAlignment="Left" Margin="203,27,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="addition of vectors:" HorizontalAlignment="Left" Margin="435,27,0,0" VerticalAlignment="Top" FontSize="20"/>

@@ -24,7 +24,31 @@ namespace Mathematical_vectors
                 throw new Exception("incorrect data");
             }
         }
-
+        public VectorMathFunc()
+        {
+                xa = 1;
+                ya = 2;
+                za = 3;
+                zb = 4;
+                xb = 5;
+                yb = 6;
+        }
+        public VectorMathFunc(double XA, double YA, double ZA)
+        {
+            try
+            {
+                xa = XA;
+                ya = YA;
+                za = ZA;
+                zb = 4;
+                xb = 5;
+                yb = 6;
+            }
+            catch (Exception)
+            {
+                throw new Exception("incorrect data");
+            }
+        }
         public double[] Plus()
         {
             double[] result = new double[3];

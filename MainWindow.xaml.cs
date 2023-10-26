@@ -36,6 +36,10 @@ namespace Mathematical_vectors
                 double YVB = double.Parse(this.YVB.Text);
                 double ZVB = double.Parse(this.ZVB.Text);
                 var VMF = new VectorMathFunc(XVA, YVA, ZVA, XVB, YVB, ZVB);
+                if (XVB <= 0 || YVB <= 0 || ZVB <= 0)
+                    VMF = new VectorMathFunc(XVA, YVA, ZVA);
+                else if (XVB <= 0 && YVB <= 0 && ZVB <= 0 && XVA <= 0 && YVA <= 0 && ZVA <= 0)                
+                    VMF = new VectorMathFunc();               
                 addition.Content = "("+VMF.Plus()[0] + ";" + VMF.Plus()[1] + ";" + VMF.Plus()[2] +")";
                 subtraction.Content = "(" + VMF.Minus()[0] + ";" + VMF.Minus()[1] + ";" + VMF.Minus()[2] + ")";
                 Scalar.Content = Math.Round(VMF.Scalar(),3);
@@ -47,6 +51,11 @@ namespace Mathematical_vectors
             {
                 MessageBox.Show(ex.Message, "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void YVB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
