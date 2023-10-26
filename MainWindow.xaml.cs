@@ -36,7 +36,7 @@ namespace Mathematical_vectors
                 double YVB = double.Parse(this.YVB.Text);
                 double ZVB = double.Parse(this.ZVB.Text);
                 var VMF = new VectorMathFunc(XVA, YVA, ZVA, XVB, YVB, ZVB);
-                if (XVB <= 0 || YVB <= 0 || ZVB <= 0)
+                if (XVA <= 0 || YVA <= 0 || ZVA <= 0)
                     VMF = new VectorMathFunc(XVA, YVA, ZVA);
                 else if (XVB <= 0 && YVB <= 0 && ZVB <= 0 && XVA <= 0 && YVA <= 0 && ZVA <= 0)                
                     VMF = new VectorMathFunc();               
